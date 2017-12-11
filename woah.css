@@ -1,0 +1,35 @@
+
+  body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("imgs/crashplay.jpg");
+    min-height: 75%;
+  }
+
+  .bgimg2 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("imgs/woah.jpg");
+    min-height: 75%;
+  }
+
+  .menu {
+    display: none;
+  }
+  #about {
+    padding-top: 95px;
+  }
+  #what {
+    padding-top: 110px;
+  }
+  #where {
+    padding-top: 110px;
+  }
+
+  .bottompadding {
+    padding-bottom: 30px;
+  }

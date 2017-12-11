@@ -1,0 +1,147 @@
+
+<html>
+<title>Crash Woah</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="woah.css">
+<body>
+
+<audio autoplay loop>
+    <source src="imgs/woah.mp3">
+</audio>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      
+    <div class="w3-dropdown-hover w3-quarter">
+        <button class=" w3-block w3-black w3-button" title="Home">HOME ▽ <i class="fa fa-caret-down"></i></button>
+        
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+
+        <a href="#about" class="w3-hide-small w3-bar-item w3-button">ABOUT</a>
+
+        <a href="#what" class="w3-bar-item w3-button">THE CRASHES</a>
+
+        </div>
+        
+<!--         <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        
+        </div> -->
+        
+        </div>
+
+      <div class="w3-quarter w3-hide-small">
+        <a href="hw43.html" class="w3-button w3-block w3-black">CRASH GALLERY</a>
+      </div>
+
+      <div class="w3-quarter">
+        <a href="hw44.html" class="w3-button w3-block w3-black">THE CRASHES</a>
+      </div>
+
+          <div class="w3-dropdown-hover w3-quarter">
+      <button class=" w3-block w3-black w3-button" title="More">MORE ▽ <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="hw42.html" class="w3-bar-item w3-button">Crash pic</a>
+                <a href="hw45.html" class="w3-bar-item w3-button">Resources</a>
+        <a href="hw46.html" class="w3-bar-item w3-button">Misc</a>
+        </div></div>
+<!--       <div class="w3-quarter">
+        <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg2 w3-display-container" id="home">
+    <div class="w3-display-bottommiddle w3-center">
+      <span class="w3-animate-fading w3-text-orange w3-jumbo">Crash<br>Bandicoot</span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-white w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container w3-hide-small" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT CRASH BANDICOOT</span></h5>
+        <p>Crash Bandicoot is all natural, biodegradable, tax deductable, locally made, made from all natural fibres made from only the finest ingredients available on the all natural stevia free market. Your family will love Crash Bandicoot.</p>
+        <p>In addition, Crash Bandicoot is FDA approved.</p>
+        <img src="imgs/woah.gif" style="width:100%;max-width:1000px" class="w3-margin-top">
+      </div>
+              <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>"Woahwoahwoahwoahwoahwoahwoahwoahwoahwoahwoahwoahwoahwoahwoahwoah."</i></p>
+          <p>-Crash Bandicoot</p>
+        </div>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="what">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE CRASHES </span></h5>
+
+        <div class="w3-row w3-center w3-card-2 w3-padding">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Racing');" id="myLink">
+            <div class="w3-col w3-third tablink">Racing</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Crash Bandicoot');">
+            <div class="w3-col w3-third tablink">Crash Bandicoot</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Bash');">
+            <div class="w3-col w3-third tablink">Bash</div>
+          </a>
+        </div>
+
+        <div id="Racing" class="w3-container menu w3-padding-48 w3-card-2">
+            <img src="imgs/racing.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+        </div>
+
+        <div id="Crash Bandicoot" class="w3-container menu w3-padding-48 w3-card-2">
+            <img src="imgs/crash.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+        </div>
+
+        <div id="Bash" class="w3-container menu w3-padding-48 w3-card-2">
+        <img src="imgs/bash.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact/Area Container -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+  <!-- Add Google Maps -->
+  <script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+   x[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablink");
+ for (i = 0; i < x.length; i++) {
+   tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+ }
+ document.getElementById(menuName).style.display = "block";
+ evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtlDNWRSVCemkzgcce3oQAIa4k27Za940&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+</html>
